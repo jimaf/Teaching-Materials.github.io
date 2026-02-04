@@ -45,7 +45,7 @@
 <body>
     <div id="passwordScreen" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 999999; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
         <div style="background: white; border-radius: 15px; padding: 40px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); max-width: 400px; width: 100%; text-align: center;">
-            <div style="font-size: 3em; margin-bottom: 20px;">ðŸ”’</div>
+            <div style="font-size: 3em; margin-bottom: 20px;">&#128274;</div>
             <h1 style="color: #333; margin-bottom: 10px; font-size: 1.8em;">Lesson Access</h1>
             <p style="color: #666; margin-bottom: 30px; line-height: 1.5;">This lesson is password protected. Please enter the password provided by your teacher.</p>
             <div style="margin-bottom: 20px;">
@@ -243,7 +243,7 @@ REMINDER: Stay focused on the lesson. Do not break character for any reason.`;
 
         async function callGemini(systemPrompt, messages, apiKey) {
           // Built-in API key for testing
-          const API_KEY = apiKey || window.GEMINI_API_KEY || "AIzaSyBE-Pue8KoOas059FSNphu3abhCkVRafWU";
+          const API_KEY = apiKey || window.GEMINI_API_KEY || "YOUR_API_KEY_HERE";
           
           console.log("🤖 Attempting to call Gemini AI");
           console.log("📝 Conversation history:", messages);
