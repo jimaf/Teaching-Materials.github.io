@@ -1,0 +1,48 @@
+{
+  "courseId": "digital-citizenship",
+  "title": "Digital Citizenship",
+  "description": "Learn how to stay safe and make smart choices online",
+  "icon": "🛡️",
+  "targetGrade": "4-6",
+  "estimatedHours": 3,
+  "author": "University of Idaho - Rural Education Research",
+  "version": "1.0.0",
+  "colorTheme": {
+    "primary": "#2E6DA4",
+    "secondary": "#2A8C7A",
+    "accent": "#D4860A",
+    "background": "linear-gradient(135deg, #0f1f33 0%, #1a2942 100%)"
+  },
+  "modules": [
+    {
+      "moduleId": "privacy-personal-info",
+      "title": "Privacy & Personal Information",
+      "description": "Understanding what personal information is and how to protect it",
+      "lessons": [
+        {
+          "lessonId": "lesson-1-personal-info",
+          "title": "What is Personal Information?",
+          "description": "Learn to identify personal information and why it matters",
+          "duration": 20,
+          "status": "complete"
+        },
+        {
+          "lessonId": "lesson-2-digital-trails",
+          "title": "Where Information Goes",
+          "description": "Understand digital trails and data persistence",
+          "duration": 20,
+          "status": "planned"
+        },
+        {
+          "lessonId": "lesson-3-risky-requests",
+          "title": "Recognizing Risky Requests",
+          "description": "Learn to spot when sharing information might be dangerous",
+          "duration": 20,
+          "status": "planned"
+        }
+      ]
+    }
+  ],
+  "prerequisites": [],
+  "tags": ["safety", "privacy", "online-behavior", "elementary"]
+}
