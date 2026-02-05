@@ -1,0 +1,25 @@
+{
+  "courseId": "cyb4400",
+  "title": "CYB 4400: Software Vulnerability Analysis",
+  "description": "Advanced cybersecurity course focusing on threat modeling, vulnerability analysis, and secure software design",
+  "colorTheme": "#DC143C",
+  "modules": [
+    {
+      "title": "Module 1: Introduction to Threat Modeling",
+      "lessons": [
+        {
+          "lessonId": "lesson-stride-intro-application",
+          "title": "Applying STRIDE to a Real System"
+        },
+        {
+          "lessonId": "lesson-stride-professional-practice",
+          "title": "Professional STRIDE Threat Modeling"
+        },
+        {
+          "lessonId": "lesson-stride-iot-practice",
+          "title": "STRIDE for IoT Systems"
+        }
+      ]
+    }
+  ]
+}
