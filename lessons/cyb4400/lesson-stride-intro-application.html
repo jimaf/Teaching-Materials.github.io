@@ -133,13 +133,27 @@
         </div>
     </div>
     <script>
-        const correctPassword = 'Analysis2026';
+        // Store SHA-256 hash instead of plaintext password
+        const correctPasswordHash = '09d6710e2181c7a84d706f549038c3163111575ad42a7b9e85e8ee3b7d734032';
         
-        function checkPassword() {
+        async function hashPassword(password) {
+            const encoder = new TextEncoder();
+            const data = encoder.encode(password);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+            return hashHex;
+        }
+        
+        async function checkPassword() {
             const input = document.getElementById('passwordInput').value;
-            if (input === correctPassword) {
+            const inputHash = await hashPassword(input);
+            
+            if (inputHash === correctPasswordHash) {
                 document.getElementById('passwordScreen').style.display = 'none';
                 document.getElementById('root').style.display = 'block';
+                // Clear password from memory
+                document.getElementById('passwordInput').value = '';
             } else {
                 const errorMsg = document.getElementById('errorMsg');
                 errorMsg.style.display = 'block';
